@@ -81,14 +81,9 @@ function draw() {
         boy.scale=0.6;
         
         cashG.destroyEach();
-        diamondsG.destroyEach();
-        jwelleryG.destroyEach();
-        swordGroup.destroyEach();
         
         cashG.setVelocityYEach(0);
-        diamondsG.setVelocityYEach(0);
-        jwelleryG.setVelocityYEach(0);
-        swordGroup.setVelocityYEach(0);
+        
      
     }
   }
@@ -134,13 +129,3 @@ function createJwellery() {
   }
 }
 
-function createSword(){
-  if (World.frameCount % 530 == 0) {
-  var sword = createSprite(Math.round(random(50, 350),40, 10, 10));
-  sword.addImage(swordImg);
-  sword.scale=0.1;
-  sword.velocityY = 3;
-  sword.lifetime = 150;
-  swordGroup.add(sword);
-  }
-}
