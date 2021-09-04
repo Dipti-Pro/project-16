@@ -50,14 +50,7 @@ function draw() {
   boy.collide(edges);
   
   //code to reset the background
-  if(path.y > 400 ){
-    path.y = height/2;
-  }
   
-    createCash();
-    createDiamonds();
-    createJwellery();
-    createSword();
 
     if (cashG.isTouching(boy)) {
       cashG.destroyEach();
